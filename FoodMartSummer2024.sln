@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35005.142
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodMartSummer2024", "FoodMartSummer2024\FoodMartSummer2024.csproj", "{43191B5C-146D-4313-B2B0-4CD2950A1963}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43191B5C-146D-4313-B2B0-4CD2950A1963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43191B5C-146D-4313-B2B0-4CD2950A1963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43191B5C-146D-4313-B2B0-4CD2950A1963}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{43191B5C-146D-4313-B2B0-4CD2950A1963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43191B5C-146D-4313-B2B0-4CD2950A1963}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43191B5C-146D-4313-B2B0-4CD2950A1963}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA2329C8-9303-418D-BD9E-103807266501}
+	EndGlobalSection
+EndGlobal

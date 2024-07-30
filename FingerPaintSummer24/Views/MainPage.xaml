@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:FingerPaintSummer24.ViewModels"
+             xmlns:views="clr-namespace:FingerPaintSummer24.Views"
+             x:Class="FingerPaintSummer24.Views.MainPage"
+             Title="Finger Paint App">
+
+    <ContentPage.BindingContext>
+        <viewmodels:DrawingViewModel />
+    </ContentPage.BindingContext>
+
+    <Grid RowDefinitions="Auto,*,Auto,Auto">
+        <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="0">
+            <Button Text="Clear" Command="{Binding ClearCommand}" />
+            <Button Text="Undo" Command="{Binding UndoCommand}" />
+        </StackLayout>
+
+        <views:DrawingCanvas x:Name="DrawingCanvasView"
+                             Grid.Row="1"
+                             Lines="{Binding Lines}"
+                             BackgroundColor="White"/>
+
+        <Grid ColumnDefinitions="Auto,*,Auto" Padding="10" Grid.Row="2">
+            <CollectionView ItemsSource="{Binding AvailableColors}"
+                            SelectionMode="Single"
+                            SelectedItem="{Binding SelectedColor}"
+                            HeightRequest="50">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal" ItemSpacing="5"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BackgroundColor="{Binding .}"
+                               WidthRequest="40"
+                               HeightRequest="40"
+                               CornerRadius="20">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:DrawingViewModel}}, Path=ChangeColorCommand}"
+                                                      CommandParameter="{Binding .}" />
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Slider Grid.Column="1"
+                    Minimum="1"
+                    Maximum="20"
+                    Value="{Binding CurrentLineWidth}"
+                    MinimumTrackColor="{Binding CurrentColor}"
+                    MaximumTrackColor="{Binding CurrentColor}"
+                    ThumbColor="{Binding CurrentColor}" />
+
+            <Label Grid.Column="2"
+                   Text="{Binding CurrentLineWidth, StringFormat='Brush: {0:F1}'}"
+                   VerticalOptions="Center" />
+        </Grid>
+
+    </Grid>
+</ContentPage>

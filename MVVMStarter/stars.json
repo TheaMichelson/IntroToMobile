@@ -1,0 +1,40 @@
+﻿{
+    "stars": [
+        {
+            "Name": "Sirius",
+            "Distance": "8.611 Light Years",
+            "Magnitude": -1.46,
+            "ImageURL": "https://science.nasa.gov/image-detail/amf-gsfc_20171208_archive_e000393/"
+        },
+        {
+            "Name": "Rigel",
+            "Distance": "864.3 Light Years",
+            "Magnitude": 0.13,
+            "ImageURL": "https://en.wikipedia.org/wiki/File:RigelAandB.jpg"
+        },
+        {
+            "Name": "Capella",
+            "Distance": "42.92 Light Years",
+            "Magnitude": 0.08,
+            "ImageURL": "https://en.wikipedia.org/wiki/File:%D0%94%D1%80%D1%83%D0%B3%D0%BE%D0%B5_-%D0%B0%D0%B2%D0%B8%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BF%D0%B5%D0%B9%D0%B7%D0%B0%D0%B6_%D0%B8_%D0%B6%D0%B0%D0%BD%D1%80,_%D0%9F%D1%80%D0%BE%D1%87%D0%B5%D0%B5_-_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F_-RP56882.jpg"
+        },
+        {
+            "Name": "Betelgeuse",
+            "Distance": "642.5 Light Years",
+            "Magnitude": 0.58,
+            "ImageURL": "https://en.wikipedia.org/wiki/File:O-type_star.png"
+        },
+        {
+            "Name": "Vega",
+            "Distance": "25.05 Light Years",
+            "Magnitude": 0.03,
+            "ImageURL": "https://en.wikipedia.org/wiki/File:Vega_by_Stephen_Rahn.jpg"
+        },
+        {
+            "Name": "Sun",
+            "Distance": "94.384 Million Miles",
+            "Magnitude": -26.74,
+            "ImageURL": "https://en.wikipedia.org/wiki/File:The_Sun_in_white_light.jpg"
+        }
+    ]
+}

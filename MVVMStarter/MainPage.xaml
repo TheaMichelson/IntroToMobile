@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MVVMStarter.ViewModels"
+             x:Class="MVVMStarter.MainPage">
+    <ContentPage.BindingContext>
+        <local:MainPageViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout>
+        <Frame BackgroundColor="Black" Padding="24" CornerRadius="0" HasShadow="True">
+            <Label Text="Welcome to the Astronomer!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
+        </Frame>
+        <ListView ItemTapped="ListView_ItemTapped">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Planets</x:String>
+                    <x:String>Stars</x:String>
+                </x:Array>
+            </ListView.ItemsSource>
+        </ListView>
+    </StackLayout>
+</ContentPage>
